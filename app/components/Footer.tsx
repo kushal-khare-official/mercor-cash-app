@@ -3,8 +3,8 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
 
-import PlayStore from '../assets/images/play-store.svg?url'
-import AppStore from '../assets/images/app-store.svg?url'
+import PlayStore from '../assets/images/play-store.svg'
+import AppStore from '../assets/images/app-store.svg'
 import Twitch from '../assets/images/twitch.svg'
 import Twitter from '../assets/images/twitter.svg'
 import Instagram from '../assets/images/instagram.svg'
@@ -36,11 +36,11 @@ export default function Footer() {
     <footer className="w-full fixed z-30 bottom-0 left-0 mx-auto py-5 px-10 md:px-24 inline-flex flex-wrap justify-between gap-2 text-grey">
       <div className="basis-full md:basis-6/12 inline-flex gap-4 justify-between md:justify-start items-center">
         <button className="flex justify-between items-center gap-2 py-3 px-2 rounded-md text-sm md:text-lg tracking-wide bg-black border border-solid border-white text-white">
-          <Image alt="App Store" src={AppStore} height={21.22} />
+          <AppStore />
           APP STORE
         </button>
         <button className="flex justify-between items-center gap-2 py-3 px-2 rounded-md text-sm md:text-lg tracking-wide bg-black border border-solid border-white text-white">
-          <Image alt="Play Store" src={PlayStore} height={21.22} />
+          <PlayStore />
           GOOGLE PLAY
         </button>
       </div>

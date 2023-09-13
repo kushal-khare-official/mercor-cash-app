@@ -4,15 +4,15 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import Logo from '../assets/images/logo.svg?url'
-import EyeButton from '../assets/images/eye-button.svg?url'
+import Logo from '../assets/images/logo.svg'
+import EyeButton from '../assets/images/eye-button.svg'
 
 export default function Header() {
   const [open, setOpen] = useState<Boolean>(false)
 
   return (
     <header className="absolute w-full flex justify-between p-5 px-10 bg-transparent">
-      <Image className="hidden lg:inline" alt="Logo" src={Logo} height={36} />
+      <Logo className="hidden lg:inline" height={36} />
       <button
         type="button"
         className="lg:hidden -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
@@ -53,7 +53,7 @@ export default function Header() {
       >
         <div className="flex items-center justify-between">
           <Link href="#" className="-m-1.5 p-1.5">
-            <Image className="h-8 w-auto" src={Logo} alt="Logo" />
+            <Logo className="w-auto" />
           </Link>
           <button
             type="button"
@@ -133,7 +133,7 @@ export default function Header() {
           </Link>
         </div>
       </nav>
-      <Image alt="Eye button" src={EyeButton} height={36} />
+      <EyeButton />
     </header>
   )
 }
