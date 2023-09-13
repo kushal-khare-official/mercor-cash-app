@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 248, 246, 246;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-rgb: 248, 246, 246;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+html:not([data-scroll='0']) footer {
+  color: #606060;
+}
+
+html:not([data-scroll='0']) footer button {
+  color: black;
+  background-color: white;
+  border-radius: 7px;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+html:not([data-scroll='0']) footer .social {
+  color: black;
+}
